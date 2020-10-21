@@ -19,7 +19,7 @@ class MainCLS(object):
 
     def onPress(self, key):
         
-        if(str(key) == 'Key.f4'):
+        if(key == Key.f4):
             print('Simulating keys ... ', end='')
             self.keyboard.type(pyperclip.paste())
             print('OK')
